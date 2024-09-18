@@ -16,6 +16,9 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
 }
+p, li {
+  font-weight: 300;
+}
 img {
   vertical-align: middle;
 }
@@ -336,7 +339,7 @@ main .left p {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-/* Work Section */ 
+/* Work Section */
 .work {
   min-height: fit-content;
   padding: 140px 0;
@@ -398,7 +401,7 @@ main .left p {
 .sponsors .container img {
   max-width: 100%;
 }
-/* Apps Section */ 
+/* Apps Section */
 .apps {
   padding: 140px 0;
   background: url(../img/bg.png);
@@ -467,7 +470,7 @@ main .left p {
 .testimonials .card p {
   margin-bottom: 40px;
 }
-.testimonials .card:nth-child(1) .separator{
+.testimonials .card:nth-child(1) .separator {
   background-color: var(--black-text);
 }
 .testimonials .card .testimonial-people {
@@ -484,6 +487,83 @@ main .left p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+/* Footer Design and Styles */
+footer {
+  width: 100%;
+  background-color: var(--primary);
+  padding-top: 140px;
+}
+.last {
+  width: 100%;
+  background: var(--primary);
+  padding: 140px 0;
+  text-align: center;
+}
+.last .container h1 {
+  color: white;
+  font-size: 72px;
+  margin-bottom: 24px;
+}
+.last .container p {
+  margin-bottom: 40px;
+}
+.last .container button {
+  margin-bottom: 40px;
+}
+.last .container .awa {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+.last .container {
+  color: white;
+}
+footer .container {
+  color: white;
+}
+footer .container .list {
+  max-width: 205.25px;
+}
+footer .container .list li {
+  cursor: pointer;
+}
+footer .container .list li:hover {
+  opacity: 0.6;
+}
+footer .container .list-1 img {
+  margin-bottom: 15px;
+}
+footer .list-wrapper {
+  gap: 100px;
+  justify-content: space-between;
+  display: flex;
+  border-bottom: 1px solid #2e4e73;
+  padding-bottom: 70px;
+}
+footer .list-wrapper .list-5 h2,
+footer .list-wrapper .list-5 p
+ {
+  margin-bottom: 23px;
+}
+footer .list-wrapper .list ul {
+  line-height: 1.7;
+}
+footer .bottom {
+  display: flex;
+  align-items: center;
+  padding: 32px 0;
+}
+footer .bottom .socials {
+  right: 32px;
+  position: absolute;
+  gap: 24px;
+  display: flex;
+}
+footer .bottom .other {
+  display: flex;
+  gap: 32px;
+  margin-left: 32px;
 }
 /* Responsive Styles : 1440px */
 @media (max-width: 1440px) {
@@ -561,6 +641,13 @@ main .left p {
     justify-content: center;
   }
 }
+@media (max-width: 1024px) {
+  footer .list-wrapper{
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+  }
+}
 /* Responsive Styles : 950px */
 @media (max-width: 950px) {
   .nav-btns {
@@ -633,7 +720,7 @@ main .left p {
   .your-data {
     padding-top: 0;
   }
-  .your-data .container{
+  .your-data .container {
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
@@ -651,6 +738,11 @@ main .left p {
   }
   .testimonials h1 {
     padding: 0 20px;
+  }
+  footer .socials {
+    bottom: 24px;
+    border-top: 1px solid #2e4e73;
+    margin: 0 auto;
   }
 }
 /* Responsive Styles : 320px */
